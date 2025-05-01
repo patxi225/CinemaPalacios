@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Palacios</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- icono de la pagina -->
+    <link rel="icon" href="imagenes/ICONO.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1><a href="#" id="titulo">Cinema Palacios</a></h1>
+        <input type="text" id="buscar" placeholder="Buscar película...">
+        <button id="botonBuscar">Buscar</button>
+    </header>
+    <nav class="menu-superior">
+        <ul>
+            <img src="imagenes/Logo de Cinema Palacios.png" alt="logo" id="logo">
+            <li><a href="#" id="irInicio">Inicio</a></li>
+            <li><a href="#favoritos-section">Favoritas</a></li>
+            <li><a href="#vistas-section">Vistas</a></li>
+            <li><a href="#informacion">Información</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="peliculas"></section>
+        <section id="favoritos-section">
+            <h2>Favoritas</h2>
+            <div id="favoritos"></div>
+        </section>
+        <section id="vistas-section">
+            <h2>Películas Vistas</h2>
+            <div id="vistas"></div>
+        </section>
+
+        <section id="informacion">
+            <p><b>¡Bienvenidos a Cinema Palacios!</b> <br><br> Tu portal ideal para descubrir, explorar y enamorarte del
+                mundo del cine. Aquí podrás encontrar información detallada sobre miles de películas: desde los grandes
+                clásicos hasta los últimos estrenos. Con una interfaz sencilla y atractiva, puedes buscar por título,
+                ver sinopsis, ver trailers, calificaciones y hasta guardar tus películas favoritas para tenerlas siempre
+                a mano.</p>
+            <img src="imagenes/cinema.jpg_large" alt="">
+        </section>
+    </main>
+    <footer>
+        <p><a href="#" id="footer">&copy; 2025 Cinema Palacios. Todos los derechos reservados.</a></p>
+    </footer>
+    <div id="modalDescripcion" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" id="cerrarModal">&times;</span>
+            <img id="modalImagen" src="" alt="">
+            <h2 id="modalTitulo"></h2>
+            <p id="modalFecha"></p>
+            <p id="modalDescripcionTexto"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
